@@ -1,0 +1,19 @@
+extend ../template/template
+block main
+    main
+        +topBanner("education","About")
+       
+        .causes-section.section-padding
+            .container
+                h3.section-title Our Causes
+                hr.mt-3.mb-4
+                .row
+                    each cause in nonprofitCauses
+                        +generateCauses(cause.title, cause.amount, cause.img, cause.description)
+        .about-section.section-padding
+            .container
+                h3.section-title Our Volunteer
+                hr.mt-3.mb-4
+                .row
+                    each item in about
+                        +generateabout(item.name,item.W,item.R,item.address,item.pin,item.mobile)

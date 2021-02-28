@@ -1,0 +1,56 @@
+extend ../template/template
+block main
+    main
+        +topBanner("education","Contact")
+        .contact-section.section-padding
+        .contact-details.text-center
+            p.h5.text-success Contact Us
+            p.display-3.fw-bold Get in Touch
+            p.h4 Lorem ipsum dolor sit amet.
+        .contact-card.section-padding
+            .container
+                .row.section-padding
+                    .col-md-4
+                        .card.rounded
+                            .card-body1.text-center.p-4.d-flex.align-items-center.justify-content-center.flex-column
+                                .contact-info-holder
+                                    svg(width="39" height="33" viewBox="0 0 39 33" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M19.5 5.66875L28.875 14.1062V28.75H25.125V17.5H13.875V28.75H10.125V14.1062L19.5 5.66875ZM19.5 0.625L0.75 17.5H6.375V32.5H17.625V21.25H21.375V32.5H32.625V17.5H38.25L19.5 0.625Z" fill="#fff")
+                                    h4.mt-4.font-weight-bold.text-white Our Location
+                                    h5.text-white Lorem ipsum dolor sit amet consectetur.       
+                    .col-md-4
+                        .card.rounded
+                            .card-body2.text-center.p-4.d-flex.align-items-center.justify-content-center.flex-column
+                                .contact-info-holder
+                                  svg(width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M37.5 29.0625C35.25 29.0625 32.8125 28.6875 30.75 27.9375C30.5625 27.9375 30.375 27.9375 30.1875 27.9375C29.625 27.9375 29.25 28.125 28.875 28.5L24.75 32.625C19.5 29.8125 15 25.5 12.375 20.25L16.5 16.125C17.0625 15.5625 17.25 14.8125 16.875 14.25C16.3125 12.1875 15.9375 9.75 15.9375 7.5C15.9375 6.5625 15 5.625 14.0625 5.625H7.5C6.5625 5.625 5.625 6.5625 5.625 7.5C5.625 25.125 19.875 39.375 37.5 39.375C38.4375 39.375 39.375 38.4375 39.375 37.5V30.9375C39.375 30 38.4375 29.0625 37.5 29.0625ZM9.375 9.375H12.1875C12.375 11.0625 12.75 12.75 13.125 14.25L10.875 16.5C10.125 14.25 9.5625 11.8125 9.375 9.375ZM35.625 35.625C33.1875 35.4375 30.75 34.875 28.5 34.125L30.75 31.875C32.25 32.25 33.9375 32.625 35.625 32.625V35.625Z" fill="white")
+                                    
+
+                                    h4.font-weight-bold.text-white Phone Number
+                                    h5.text-white +91-1232443       
+                                    h5.text-white +91-8899653       
+                    .col-md-4
+                        .card.rounded
+                            .card-body3.text-center.p-4.d-flex.align-items-center.justify-content-center.flex-column
+                                .contact-info-holder
+                                    svg(width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                     path(d="M39.4313 11.7939L22.5 1.2002L5.56875 11.7939C4.48125 12.4502 3.75 13.6314 3.75 15.0002V33.7502C3.75 35.8127 5.4375 37.5002 7.5 37.5002H37.5C39.5625 37.5002 41.25 35.8127 41.25 33.7502V15.0002C41.25 13.6314 40.5188 12.4502 39.4313 11.7939ZM37.5 33.7502H7.5V18.7502L22.5 28.1252L37.5 18.7502V33.7502ZM22.5 24.3752L7.5 15.0002L22.5 5.6252L37.5 15.0002L22.5 24.3752Z" fill="white")
+
+                                    h3.mt-4.font-weight-bold.text-white Email Address
+                                    h6.text-white.mt-2 joydey23@gmail.com  
+                .row.section-padding 
+                    .col-md-6
+                        .card.text-center.border-0
+                            .card-body.bg-light
+                                p.text-success Inquiry
+                                h2.display-4 Leave a Message
+                                p Lorem ipsum dolor sit amet consectetur.
+                                .row
+                                    .col-md-6
+                                        input.form-control(type="text", name="",placeholder="Your Name")
+                                    .col-md-6
+                                        input.form-control(type="email", name="",placeholder="Your email")
+                                textarea.form-control.mt-4(name="", cols="20", rows="7",placeholder="Your message")
+                                button.btn-success.btn-lg.rounded-pill.mt-2 Send message
+                    .col-md-6
+                        img.img-fluid(src="assets/img/snazzy-image.png", alt="", srcset="")
